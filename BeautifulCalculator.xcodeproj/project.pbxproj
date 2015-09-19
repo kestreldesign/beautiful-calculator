@@ -90,6 +90,7 @@
 		2770E8441BADBEBF00C94853 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Kestrel Design";
 				TargetAttributes = {
@@ -285,6 +286,7 @@
 				2770E8601BADBEBF00C94853 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
