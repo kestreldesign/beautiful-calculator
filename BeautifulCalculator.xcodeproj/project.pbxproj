@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		27001B091BAF224E00AE262C /* CaviarDreams.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27001B081BAF224E00AE262C /* CaviarDreams.ttf */; settings = {ASSET_TAGS = (); }; };
+		2735C3921BAF2D9500528D7D /* CaviarDreams_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2735C3911BAF2D9500528D7D /* CaviarDreams_Bold.ttf */; settings = {ASSET_TAGS = (); }; };
 		2770E8501BADBEBF00C94853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2770E84F1BADBEBF00C94853 /* AppDelegate.swift */; };
 		2770E8521BADBEBF00C94853 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2770E8511BADBEBF00C94853 /* ViewController.swift */; };
 		2770E8551BADBEBF00C94853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2770E8531BADBEBF00C94853 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		27001B081BAF224E00AE262C /* CaviarDreams.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams.ttf; sourceTree = "<group>"; };
+		2735C3911BAF2D9500528D7D /* CaviarDreams_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_Bold.ttf; sourceTree = "<group>"; };
 		2770E84C1BADBEBF00C94853 /* BeautifulCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautifulCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2770E84F1BADBEBF00C94853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2770E8511BADBEBF00C94853 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				2770E8561BADBEBF00C94853 /* Assets.xcassets */,
 				2770E8581BADBEBF00C94853 /* LaunchScreen.storyboard */,
 				27001B081BAF224E00AE262C /* CaviarDreams.ttf */,
+				2735C3911BAF2D9500528D7D /* CaviarDreams_Bold.ttf */,
 				2770E85B1BADBEBF00C94853 /* Info.plist */,
 			);
 			path = BeautifulCalculator;
@@ -127,6 +130,7 @@
 			files = (
 				2770E85A1BADBEBF00C94853 /* LaunchScreen.storyboard in Resources */,
 				2770E8571BADBEBF00C94853 /* Assets.xcassets in Resources */,
+				2735C3921BAF2D9500528D7D /* CaviarDreams_Bold.ttf in Resources */,
 				27001B091BAF224E00AE262C /* CaviarDreams.ttf in Resources */,
 				2770E8551BADBEBF00C94853 /* Main.storyboard in Resources */,
 			);
