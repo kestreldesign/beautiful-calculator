@@ -432,6 +432,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="qJt-NC-SKL" id="Sir-fU-uD0"/>
                         <outlet property="displayText" destination="wUc-2b-BdT" id="fIW-iH-pUv"/>
                     </connections>
                 </viewController>

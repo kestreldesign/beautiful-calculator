@@ -12,11 +12,14 @@ class ViewController: UIViewController {
    
     //outlets
     @IBOutlet weak var displayText: UILabel!
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     //variables
     var currentInput = ""
     var leftInput = "0"
     var operatorPressed: Operator = .Empty
+    var bgImageTimer: NSTimer!
+    var nextImage = 2
     
     //enums
     enum Operator {
@@ -27,6 +30,35 @@ class ViewController: UIViewController {
         case Empty
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        nextImage = Int(arc4random_uniform(2)+1)
+        print("bg\(nextImage).png")
+        backgroundImage.image = UIImage(named: "bg\(nextImage).png")
+        bgImageTimer = NSTimer.scheduledTimerWithTimeInterval(9, target: self, selector: Selector("imageFadeIn"), userInfo: nil, repeats: true)
+    }
+    
+    
+    func imageFadeIn() {
+        nextImage++
+        if nextImage >= 4 {
+            nextImage = 1
+        }
+        let name = "bg\(nextImage).png"
+        print(name)
+        let secondImageView = UIImageView(image: UIImage(named: "\(name)"))
+        secondImageView.frame = view.frame
+        secondImageView.alpha = 0.0
+        
+        view.insertSubview(secondImageView, aboveSubview: backgroundImage)
+        
+        UIView.animateWithDuration(4.0, delay: 0, options: .CurveEaseOut, animations: {
+            secondImageView.alpha = 1.0
+            }, completion: {_ in
+                self.backgroundImage.image = secondImageView.image
+                secondImageView.removeFromSuperview()
+        })
+    }
 
     @IBAction func numberButtonPressed(btn: UIButton) {
         if btn.tag == -1 {
@@ -97,19 +129,6 @@ class ViewController: UIViewController {
             currentInput = ""
         }
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    
 
 }
 
